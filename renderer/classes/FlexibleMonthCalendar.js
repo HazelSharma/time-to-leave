@@ -91,8 +91,8 @@ class FlexibleMonthCalendar extends BaseCalendar
     {
         const switchView = `<input id="switch-view" type="image" src="../assets/switch.svg" alt="${this._getTranslation('$BaseCalendar.switch-view')}" title="${this._getTranslation('$BaseCalendar.switch-view')}" height="24" width="24"></input>`;
         const todayBut = `<input id="current-month" type="image" src="../assets/calendar.svg" alt="${this._getTranslation('$FlexibleMonthCalendar.current-month')}" title="${this._getTranslation('$FlexibleMonthCalendar.current-month')}" height="24" width="24"></input>`;
-        const leftBut = `<input id="prev-month" type="image" src="../assets/left-arrow.svg" alt="${this._getTranslation('$FlexibleMonthCalendar.previous-month')}" height="24" width="24"></input>`;
-        const rightBut = `<input id="next-month" type="image" src="../assets/right-arrow.svg" alt="${this._getTranslation('$FlexibleMonthCalendar.next-month')}" height="24" width="24"></input>`;
+        const leftBut = `<input id="prev-month" type="image" src="../assets/left-arrow.svg" alt="${this._getTranslation('$FlexibleMonthCalendar.previous-month')}" title="${this._getTranslation('$FlexibleMonthCalendar.next-month')}" height="24" width="24"></input>`;
+        const rightBut = `<input id="next-month" type="image" src="../assets/right-arrow.svg" alt="${this._getTranslation('$FlexibleMonthCalendar.next-month')}" title="${this._getTranslation('$FlexibleMonthCalendar.previous-month')}" height="24" width="24"></input>`;
         const title = 'Time to Leave';
         return '<div class="title-header">'+
                     '<div class="title-header title-header-img"><img src="../assets/ttl.svg" height="64" width="64"></div>' +
