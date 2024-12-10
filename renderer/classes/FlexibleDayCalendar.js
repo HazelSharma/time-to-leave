@@ -58,8 +58,8 @@ class FlexibleDayCalendar extends BaseCalendar
     {
         const switchView = `<input id="switch-view" type="image" src="../assets/switch.svg" alt="${this._getTranslation('$BaseCalendar.switch-view')}" title="${this._getTranslation('$BaseCalendar.switch-view')}" height="24" width="24"></input>`;
         const todayBut = `<input id="current-day" type="image" src="../assets/calendar.svg" alt="${this._getTranslation('$FlexibleDayCalendar.current-day')}" title="${this._getTranslation('$FlexibleDayCalendar.current-day')}" height="24" width="24"></input>`;
-        const leftBut = `<input id="prev-day" type="image" src="../assets/left-arrow.svg" alt="${this._getTranslation('$FlexibleDayCalendar.previous-day')}" height="24" width="24"></input>`;
-        const rightBut = `<input id="next-day" type="image" src="../assets/right-arrow.svg" alt="${this._getTranslation('$FlexibleDayCalendar.next-day')}" height="24" width="24"></input>`;
+        const leftBut = `<input id="prev-day" type="image" src="../assets/left-arrow.svg" alt="${this._getTranslation('$FlexibleDayCalendar.previous-day')}" title="${this._getTranslation('$FlexibleDayCalendar.previous-day')}" height="24" width="24"></input>`;
+        const rightBut = `<input id="next-day" type="image" src="../assets/right-arrow.svg" alt="${this._getTranslation('$FlexibleDayCalendar.next-day')}" title="${this._getTranslation('$FlexibleDayCalendar.next-day')}" height="24" width="24"></input>`;
         const title = 'Time to Leave';
         return '<div class="title-header">'+
                     '<div class="title-header-img"><img src="../assets/ttl.svg" height="64" width="64"></div>' +
@@ -186,7 +186,7 @@ class FlexibleDayCalendar extends BaseCalendar
                 '</div>' +
                 '<div class="third-group">' +
                     '<div class="sign-cell">' +
-                        '<div class="sign-container"><span class="plus-sign">+</span></div>' +
+                        '<div class="sign-container" title="${this._getTranslation(\'$FlexibleDayCalendar.day-total\')}"><span class="plus-sign">+</span></div>' +
                     '</div>' +
                 '</div>' +
             '</div>\n';
